@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>TddBuddy.DateTimeExtensions.DotNet</id>
+    <version>1.0.0</version>
+    <title>DateTimeExtensions - DotNet</title>
+    <authors>TddBuddy</authors>
+    <owners>StoneAge Technologies</owners>
+    <projectUrl>https://github.com/T-rav/DateTimeExtensions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A set of .net utilities for DateTime manipulation</description>
+    <releaseNotes>Inital release</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>DateTime</tags>
+  </metadata>
+</package>
