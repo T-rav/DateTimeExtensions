@@ -20,11 +20,24 @@ namespace TddBuddy.DateTime.Extensions.Tests
         public void ConvertTo24HourFormatWithSeconds_WhenDateTimeAmValue_ShouldReturnStringWithSeconds()
         {
             //---------------Arrange-------------------
-            var dateTime = new System.DateTime(2017, 2, 1, 10, 05, 09);
+            var dateTime = new System.DateTime(2017, 2, 2, 10, 05, 09);
             //---------------Act----------------------
             var result = dateTime.ConvertTo24HourFormatWithSeconds();
             //---------------Assert-----------------------
-            Assert.AreEqual("2017-02-01 10:05:09", result);
+            var expected = "2017-02-02 10:05:09";
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ConvertToDateFormat_WhenDateTimeAmValue_ShouldReturnStringWithSeconds()
+        {
+            //---------------Arrange-------------------
+            var dateTime = new System.DateTime(2017, 3, 4, 10, 05, 09);
+            //---------------Act----------------------
+            var result = dateTime.ConvertToFormatDateOnly();
+            //---------------Assert-----------------------
+            var expected = "2017-03-04";
+            Assert.AreEqual(expected, result);
         }
     }
 }
